@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title%} de inicio {% endblock %}
+{% block content %}
+    <main class="contenido-principal contenedor">
+     <h2 class="text-center">contacto</h2>
+     <form class="formulario">
+        <fieldset>
+            <legend>tus datos</legend>
+            <div class="campo">
+                <label for="neim">neim</label>
+                <input type="text" id="neim" placeholder="tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="asunto">asunto</label>
+                <input type="text" id="asunto" placeholder="que trais" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">email</label>
+                <input type="text" id="email" placeholder="cachumbala" required>
+            </div>
+
+            <div class="campo">
+                <label for="tu fon">tu fon</label>
+                <input type="tel" id="tu fon" placeholder= "fonazo" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">mensaje</label>
+                <textarea name="" id="" rows="10" cols="20"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>país</legend>
+            <div class="campo">
+                <label for="pais">pais</label>
+                <select name="" id="pais">
+                    <option value=""disabled>--seleccione--</option>
+                    <option value="">Mexico</option>
+                    <option value="">perusalen</option>
+                    <option value="">colombia</option>
+                    <option value="">argentina</option>
+                    <option value="">ecuador</option>
+                    <option value=""selected>acaspulque</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>informacion extra</legend>
+            <div class="campo">
+                <label for="cliente">cliente:</label>
+                <input type="radio" name="tipo" id="cliente">
+            </div>
+            <div class="campo">
+                <label for="proveedor">proveedor</label>
+                <input type="radio" name="tipo" id="proveedor">
+            </div>
+            <div class="campo">
+                <label for="categoria">categoria de intereses</label>
+                <input list="categoria" name="categoria">
+                <datalist id="categoria">
+                    <option value="exterior">
+                    <option value="inferior">
+                    <option value="oficina">
+                    <option value="television">
+                </datalist>
+            </div>
+        </fieldset>
+        <input class="btn" type="submit" value="enviar">
+     </form>
+    </main>
+{% endblock %}

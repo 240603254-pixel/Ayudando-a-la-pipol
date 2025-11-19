@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>pagina{% block title%}{% endblock %}</title>
+    
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">El mal uso <spam1>de</spam1> <spam>la inteligencia artificial</spam></h1>
+    </header>
+   
+   
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="{{url_for('index')}}">el mal uso de la inteligencia artificial</a>
+            <a href="{{url_for('tienda')}}">¿como afecta a los jovenes en su educacion?</a>
+            <a href="{{url_for('contacto')}}">contacto</a>
+            <a href="{{url_for('blog')}}">perdida del pensamiento critico</a>
+            <a href="{{url_for('galeria')}}">galeria</a>
+            <a href="{{url_for('nosotros')}}">tips para mejorar el uso de la IA</a>
+        </nav>
+    </div>    
+
+   {% block content %}
+   {% endblock %}
+    
+   <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div class="footer-navegacion">
+                <h3 class="f-titulo"> categorias </h3>
+                <nav class="footer-nav">
+                    <a href="#">cocina</a>
+                    <a href="#">oficina</a>
+                    <a href="#">jardin</a>
+                    <a href="#">cochera</a>
+                    <a href="#">mimitorio</a>
+                </nav>
+            </div>
+            <div class="footer-navegacion">
+                <h3 class="f-titulo">about our</h3>
+                <nav class="footer-nav">
+                    <a href="#">kichen</a>
+                    <a href="#">oficina</a>
+                    <a href="#">jardin</a>
+                    <a href="#">cochera</a>
+                    <a href="#">dormitorio</a>
+                </nav>
+            </div>
+            <div class="footer-navegacion">
+                <h3 class="f-titulo">soporte</h3>
+                <nav class="footer-nav">
+                    <a href="#">cocina</a>
+                    <a href="#">oficina</a>
+                    <a href="#">jardin</a>
+                    <a href="#">cochera</a>
+                    <a href="#">dormitorio</a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="footer-copyright">todos los derechos reservados, chicharrones descuido</p>
+
+   </footer>
+
+    
+</body>
+</html>

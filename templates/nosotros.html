@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title%} de inicio {% endblock %}
+{% block content %}
+   <main class="contenido-principal contenedor">
+        <h2 class="text-center">sobre nosotros</h2>
+        <div class="contenido-nosotros">
+             <div class="imagen">
+                <img src="{{ url_for('static', filename='img/manteca.jpg')}}" alt="">
+                    <div class="informacion-nosotros">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci veniam autem ea quaerat illo modi dolor fugiat magnam alias ut officiis nobis consequatur, quis expedita unde laudantium a explicabo.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ducimus deserunt ea veniam asperiores, expedita, in harum id neque maxime atque corporis reiciendis optio itaque! Recusandae minima iste aperiam ab?</p>
+                    </div>
+             </div>
+        </div>
+    </main>
+{% endblock %}

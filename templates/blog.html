@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title%} de inicio {% endblock %}
+{% block content %}
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">nuestro blog</h2>
+
+        <section class="contenedor-blog">
+            <div class="blog">
+                <article class="entrada">
+                    <h2>guia de salsitas</h2>
+
+                    <div class="imagen">
+                        <img src="{{ url_for('static', filename='img/salsas.webp')}}" alt="">
+                    </div>
+
+                    <div class="entrada-meta">
+                        <p>fecha <span>22 e octubre del 2022</span></p>
+                        <p>escrito por <span>tilin gonzales</span></p>
+                    </div>
+
+                    <div class="entrada-blog">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ut, sit tenetur vero voluptates ratione nobis reiciendis, eaque quasi, nam deserunt odio similique quisquam rerum sint ipsa vel eum. Neque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit minima hic provident eligendi vitae, aspernatur repellat ipsam alias ullam est quis quasi distinctio blanditiis sit adipisci optio repellendus corrupti!</p>
+                    </div>
+                        <a href="{{url_for('entrada')}}" class="btn max-width"> leer </a>
+                </article>
+            </div>
+
+                <aside>
+                <h3>otras entradas del Blog</h3>
+                    <ul>
+                        <li>
+                            <a href="{{url_for('entrada')}}">guia de colores</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('entrada')}}">nuevos modelos</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('entrada')}}">guia para diseño</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('entrada')}}">guia para diseño de colores</a>
+                        </li>
+                    </ul>
+                </aside>
+        </section>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title%} de inicio {% endblock %}
+{% block content %}
+   <div class="hero"></div>
+   <section class="contenedor">
+        <h2 class="text-center">categoria de productos</h2>
+        <div class="listado-categorias">
+            <div class="categoria">
+                <img src="{{ url_for('static', filename='img/salsas.webp')}}" alt="">
+                <a href="#">salsas</a>
+            </div>
+            <div class="categoria">
+                <img src="{{ url_for('static', filename='img/Carnitas-7.webp')}}" alt="">
+                <a href="#">carnitas</a>
+            </div>
+            <div class="categoria">
+                <img src="{{ url_for('static', filename='img/manteca.jpg')}}" alt="">
+                <a href="#">manteca</a>
+            </div>
+        </div>
+   </section>
+
+   <section class="sobre-nosotros">
+        <div class="contenedor sobre-nosotros-grid">
+            <div class="texto-nosotros">
+                <h2 class="text-center">los mejores chicharrones</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde magnam quae eaque facere molestias, aspernatur doloremque nostrum sequi dolore, iure voluptate accusantium enim aut maiores, vel quos tenetur pariatur? Quia!</p>
+            </div>
+        </div>
+   </section>
+
+
+   <main class="contenido-principal contenedor">
+        <h2 class="text-center">nuestros productos</h2>
+        <div class="listado-productos">
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/chicharrones.webp')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto uan</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/salsas.webp')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto tu</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/manteca.jpg')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto ti</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/chicharroniza.webp')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto fo</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/chicharron.jpg')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto fai</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='img/carnitas-7.webp')}}" alt="">
+                <div class="texto-producto">
+                    <h3>producto si</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nulla voluptate blanditiis eaque culpa eos magni eum quibusdam provident sit velit ab at adipisci dignissimos, voluptatem, impedit nesciunt. Officia, ses.                    </p>
+                    <p class="precio">$12</p>
+                    <a href="#">Pa casita</a>
+                </div>
+            </div>
+        </div>
+   </main>
+
+  
+
+{% endblock %}
