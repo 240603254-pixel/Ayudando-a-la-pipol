@@ -107,7 +107,7 @@ img{
 
 /*hero*/
 .hero{
-    background-image: url(../img/chicharroniza.webp);
+    background-image: url(../img/ia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -150,7 +150,7 @@ h1 span{
 
 /*Bloque nosotros*/
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, #9d1905 50%, #9d1905 100%), url(../img/Carnitas-7.webp);
+    background-image: linear-gradient(to right, transparent 50%, #9d1905 50%, #9d1905 100%), url(../img/ia.jpg);
     background-position: left center;
     padding: 10rem 0;
     background-repeat: no-repeat;
