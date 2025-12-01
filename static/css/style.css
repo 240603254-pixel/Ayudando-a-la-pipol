@@ -1,6 +1,6 @@
 
 h1{
-    color: indigo;
+    color: rgb(0, 0, 0);
     font-size: 80px;
     text-align: center;
     margin-top: auto;
@@ -14,7 +14,7 @@ h1 spam{
     color: slategray;
 }
 h1 spam1{
-    color: yellowgreen;
+    color: rgb(50, 187, 205);
 }
 
 h2{
@@ -90,8 +90,8 @@ img{
     text-align: center;
 }
 .contenedor-navegacion{
-    border-top: 10px double #000000;
-    border-bottom: 10px double #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000
 
 }
 
@@ -106,13 +106,7 @@ img{
 }
 
 /*hero*/
-.hero{
-    background-image: url(../img/ia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 55rem;
-}
+    
 
 h1{
     color: #000;
@@ -135,7 +129,7 @@ h1 span{
     font-size: 2rem;
 }
 .categoria a:hover{
-    background-color: #9d1905;
+    background-color: #05639d;
     color: #fff;
     border-bottom-right-radius: 1rem;
 }
@@ -150,7 +144,7 @@ h1 span{
 
 /*Bloque nosotros*/
 .sobre-nosotros{
-    background-image: linear-gradient(to right, transparent 50%, #9d1905 50%, #9d1905 100%), url(../img/ia.jpg);
+    background-image: linear-gradient(to right, transparent 50%, #05639d 50%, #05639d 100%), url(../img/afuita.jpg);
     background-position: left center;
     padding: 10rem 0;
     background-repeat: no-repeat;
@@ -213,7 +207,7 @@ h1 span{
     grid-column: 5 / 7;
 }
 .producto{
-    background: #9d1905;
+    background: #05639d;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra horizontalmente */
@@ -233,20 +227,19 @@ h1 span{
     max-width: 30rem;
 }
 .texto-producto{
+    position: relative;
     text-align: center;
     color: #fff;
     padding: 2rem;
 }
 .texto-producto h3{
     margin: 0;
+    padding: auto;
 }
 .texto-producto p{
-    margin: 0 0 .5rem 0;
+    margin: 0 0 0 0;
 }
-.texto-producto .precio{
-    font-size: 2.8rem;
-    font-weight: 900;
-}
+
 /*footer*/
 .site-footer{
     border-top: 1px solid #d0c6c6;
@@ -282,20 +275,21 @@ h1 span{
 
 /*formulario*/
 .btn{
-    background-color: #9d1905;
+    background-color: #05639d;
     text-align: center;
     color: #000000;
+    margin: auto;
 }
 .formulario{
     max-width: 60rem;
     margin: 0 auto;
 }
 .formulario fieldset{
-    border: 1px solid #a73232;
+    border: 1px solid #05639d;
     margin-bottom: 2rem;
 }
 .formulario legend{
-    background-color: #a70000;
+    background-color: #05639d;
     width: 100%;
     text-align: center;
     color: black;
@@ -315,7 +309,7 @@ h1 span{
 .campo textarea,
 .campo select{
     flex: 1;
-    border: 1px solid #7d3a3a;
+    border: 1px solid #05639d;
     padding: 1rem;
 }
 /*nosotros*/
@@ -339,46 +333,88 @@ h1 span{
 }
 
 /*blog*/
-.contenedor-blog{
+.contenedor-blog {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 4rem;
+    grid-template-columns: 1fr;   /* una sola columna para centrar todo */
+    justify-items: center;        /* centra horizontalmente los hijos */
+    align-items: center;          /* centra verticalmente los hijos */
+    text-align: center;           /* centra texto dentro de los elementos */
+    row-gap: 4rem;                /* espacio entre filas */
 }
-.entrada{
+
+.entrada {
     border-bottom: 2px solid #e1e1e1;
     padding-bottom: 4rem;
     margin-bottom: 2rem;
+    width: 100%;                  /* ocupa todo el ancho disponible */
+    max-width: 60rem;             /* límite para que no se vea demasiado ancho */
 }
-.entrada:last-of-type{
+
+.entrada:last-of-type {
     border: none;
 }
-.entrada-meta{
+
+.entrada-meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;      /* centra los elementos dentro del meta */
+    gap: 2rem;                    /* espacio entre ellos */
 }
-.entrada-meta p{
+
+.entrada-meta p {
     font-weight: 700;
 }
-.entrada-meta span{
+
+.entrada-meta span {
     color: #037bc0;
 }
 
-.contenido-entrada-blog{
+.contenido-entrada-blog {
     max-width: 60rem;
     margin: 0 auto;
+    text-align: center;           
 }
 
-/*Galeria*/
-.galeria{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+/*Errores al usar ia*/
+.errores-ia {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
 }
-.galeria img{
-    height: 40rem;
-    width: 40rem;
-    object-fit: cover;
+
+.errores-ia h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: #9d1905;
+}
+
+.grid-errores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+.error {
+  background: #f9f9f9;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.error:hover {
+  transform: scale(1.05);
+  background: #eef6fb;
+}
+
+.error h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.error p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #555;
 }

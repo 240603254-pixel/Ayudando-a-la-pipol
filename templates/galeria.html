@@ -1,56 +1,33 @@
 {% extends 'base.html' %}
 {% block title%} de inicio {% endblock %}
 {% block content %}
-    <main class="contenido-principal contenedor">
-        <h2 class="text-center">Galeria</h2>
-        <ul class="galeria">
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('static', filename='img/en don chicharron.jpg')}}">
-                    <img src="{{ url_for('static', filename='img/en don chicharron.jpg')}}" alt="">
-                </a>
-            </li>
-            
-        </ul>
-    
-    </main>
+  <section class="errores-ia">
+  <h2>Muy mal</h2>
+  <div class="grid-errores">
+    <article class="error">
+      <h3>Escasez del recurso</h3>
+      <p>El desperdicio y la sobreexplotación reducen la disponibilidad de agua potable. Esto afecta directamente a comunidades enteras que dependen de fuentes cada vez más limitadas.</p>
+    </article>
+    <article class="error">
+      <h3>Afectación a la salud</h3>
+      <p>El consumo de agua contaminada provoca enfermedades gastrointestinales y otros problemas graves. La falta de acceso seguro incrementa la vulnerabilidad de la población más pobre.</p>
+    </article>
+    <article class="error">
+      <h3>Impacto en la agricultura</h3>
+      <p>La escasez y la mala gestión del agua disminuyen la producción de alimentos. Esto genera pérdidas económicas y riesgo de hambrunas en regiones dependientes del riego.</p>
+    </article>
+    <article class="error">
+      <h3>Deterioro ambiental</h3>
+      <p>Los ecosistemas acuáticos se degradan por contaminación y falta de agua. Esto provoca pérdida de biodiversidad y altera el equilibrio natural de ríos y lagos.</p>
+    </article>
+    <article class="error">
+      <h3>- Problemas económicos</h3>
+      <p>La sobreexplotación eleva los costos de extracción y tratamiento del agua. Además, las sequías y la contaminación afectan industrias como la agrícola, ganadera y energética.</p>
+    </article>
+    <article class="error">
+  <h3>	Conflictos sociales</h3>
+  <p>La escasez de agua genera tensiones entre comunidades, sectores productivos y regiones. En algunos casos puede derivar en disputas por el acceso y control del recurso.</p>
+</article>
+  </div>
+</section>
 {% endblock %}

@@ -11,10 +11,6 @@ def index():
 def tienda():
     return render_template('tienda.html')
 
-@app.route("/contacto")
-def contacto():
-    return render_template('contacto.html')
-
 @app.route("/blog")
 def blog():
     return render_template('blog.html')

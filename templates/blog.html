@@ -2,47 +2,31 @@
 {% block title%} de inicio {% endblock %}
 {% block content %}
     <main class="contenido-principal contenedor">
-        <h2 class="text-center">nuestro blog</h2>
 
         <section class="contenedor-blog">
             <div class="blog">
                 <article class="entrada">
-                    <h2>guia de salsitas</h2>
 
                     <div class="imagen">
-                        <img src="{{ url_for('static', filename='img/salsas.webp')}}" alt="">
+                        <img src="{{ url_for('static', filename='img/2.jpg')}}" alt="">
                     </div>
 
                     <div class="entrada-meta">
-                        <p>fecha <span>22 e octubre del 2022</span></p>
+                        <p>fecha <span>22 de octubre del 2025</span></p>
                         <p>escrito por <span>tilin gonzales</span></p>
                     </div>
 
                     <div class="entrada-blog">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ut, sit tenetur vero voluptates ratione nobis reiciendis, eaque quasi, nam deserunt odio similique quisquam rerum sint ipsa vel eum. Neque.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit minima hic provident eligendi vitae, aspernatur repellat ipsam alias ullam est quis quasi distinctio blanditiis sit adipisci optio repellendus corrupti!</p>
+                        <p> México ya experimenta los efectos negativos de la falta de agua. Durante los últimos años, las regiones centro y norte del país han vivido escasez de agua debido al aumento de las sequías. De acuerdo con datos del Banco Mundial, en el país la disponibilidad promedio anual per cápita pasó de 10 mil metros cúbicos (m3) en 1960 a 4 mil en 2012. Se estima que para 2030, esta disponibilidad en México descienda debajo de los 3 mil m3 por habitante al año.
+
+Por su importancia para el desarrollo económico, ambiental y social, el Instituto Mexicano para la Competitividad (IMCO) realizó un estudio con el objetivo de ofrecer un diagnóstico de la situación actual del agua en el país, desde entender a los cuatro grupos consumidores hasta los retos que enfrentan los tipos de los recursos hídricos en México. Con ello se realizaron propuestas que abonen al desarrollo de lineamientos de política pública a nivel nacional que resuelvan los problemas actuales y prevean los riesgos futuros en la materia.
+
+Para garantizar la demanda futura, el Estado mexicano requiere actualizar los marcos legales y regulatorios que rigen el manejo del agua, así como modernizar la infraestructura hidráulica del país. Es necesario tomar en consideración las distintas características técnicas -en particular las geofísicas- y desafíos que presenta actualmente el país en materia hídrica, tales como el aumento poblacional, el crecimiento de la mancha urbana, la evolución de las sequías, así como la variación en las precipitaciones.
+</p>
                     </div>
-                        <a href="{{url_for('entrada')}}" class="btn max-width"> leer </a>
+                        <a href="{{url_for('entrada')}}" class="btn max-width"> Más...</a>
                 </article>
             </div>
-
-                <aside>
-                <h3>otras entradas del Blog</h3>
-                    <ul>
-                        <li>
-                            <a href="{{url_for('entrada')}}">guia de colores</a>
-                        </li>
-                        <li>
-                            <a href="{{url_for('entrada')}}">nuevos modelos</a>
-                        </li>
-                        <li>
-                            <a href="{{url_for('entrada')}}">guia para diseño</a>
-                        </li>
-                        <li>
-                            <a href="{{url_for('entrada')}}">guia para diseño de colores</a>
-                        </li>
-                    </ul>
-                </aside>
         </section>
     </main>
 
